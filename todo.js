@@ -135,7 +135,7 @@ class App {
   }
   stats() {
     let actives = this.items.filter(x => !x.checked).length;
-    if (this.items.length === 0) {return html``} 
+    if (this.items.length === 0) {return ''} 
     else if (actives < 2) {return html `<p class="m-2">${actives} item left</p>`}
     else {return html`<p class="m-2">${actives} items left</p>`}
   }
